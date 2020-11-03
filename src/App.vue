@@ -10,11 +10,11 @@ import LandingPage from './components/LandingPage'
 export default {
   name: 'App',
   components: {
-    LandingPage
+    LandingPage,
   }
 }
 </script>
 
 <style lang="scss">
-
+@import './assets/css/theme.scss'
 </style>

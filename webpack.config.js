@@ -56,7 +56,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules\/(?!(dom7|swiper)\/).*/,
       },
       {
         test: /.(woff(2)?|eot|ttf)(\?[a-z0-9=\.]+)?$/,
@@ -82,7 +82,7 @@ module.exports = {
   },
   plugins: [
     // ... Vue Loader plugin omitted
-    new ExtractTextPlugin("style.css")
+    new ExtractTextPlugin("style.css"),
   ],
   resolve: {
     alias: {
