@@ -19,126 +19,139 @@
           img.img-responsive(src='' alt='')
         .col-lg-6.header__content
           h1.title
-            | Climatización Oeste
-            span.title-style
-          p
-            | JOSÉ LUIS JÁUREGUI
-          a.header__button(href='#') VER MAS
-          a.header__button(href='#') CONTACTARSE
+            img(src='../../assets/img/climatizacion-oeste.png' alt='')
+          //-   | Climatización Oeste
+          //-   span.title-style
+          //- p.pl-3
+          //-   | VENTA, REPARACION Y SERVICE DE AIRES ACONDICIONADOS, DOMICILIARIO E INDUSTRIAL
+          a.ml-3.header__button(href='#') CONTACTARSE
   section.sponsors.sponsors--bg
     .container
         swiper(:options="swiperOption")
           swiper-slide
             .sponsors__single
-              img(src='../../assets/img/sponsors1.png' alt='')
+              img(src='../../assets/img/citratus-logo-01.png' alt='')
           swiper-slide
             .sponsors__single
-              img(src='../../assets/img/sponsors2.png' alt='')
+              img(src='../../assets/img/logo-alibue.png' alt='')
           swiper-slide
             .sponsors__single
-              img(src='../../assets/img/sponsors3.png' alt='')
+              img(src='../../assets/img/logo-conosur.png' alt='')
           swiper-slide
             .sponsors__single
-              img(src='../../assets/img/sponsors4.png' alt='')
+              img(src='../../assets/img/logo-ppe.png' alt='')
           swiper-slide
             .sponsors__single
-              img(src='../../assets/img/sponsors5.png' alt='')
+              img(src='../../assets/img/logo-surfatec.png' alt='')
           swiper-slide
             .sponsors__single
-              img(src='../../assets/img/sponsors6.png' alt='')
+              img(src='../../assets/img/logoferroclor.png' alt='')
   section#about.section
-  .container
-    .row
-      .col-lg-6.col-md-6.col-xs-12
-        .left-text-content
-          .section-heading
-            h6 About Us
-            h2 We work with top brands and startups
-          .row
-            .col-md-6.col-sm-6
-              .service-item
-                img(src='assets/images/service-item-01.png' alt='')
-                h4 Top Notch
-            .col-md-6.col-sm-6
-              .service-item
-                img(src='assets/images/service-item-01.png' alt='')
-                h4 Robust
-            .col-md-6.col-sm-6
-              .service-item
-                img(src='assets/images/contact-info-03.png' alt='')
-                h4 Reliable
-            .col-md-6.col-sm-6
-              .service-item
-                img(src='assets/images/contact-info-03.png' alt='')
-                h4 Up-to-date
-            .col-md-12
-              a.main-button-icon(href='#')
-                | Learn More
-                i.fa.fa-arrow-right
-      .col-lg-6.col-md-6.col-xs-12
-        .right-text-content
-          p
-            a(rel='nofollow noopener' href='https://templatemo.com/tm-543-breezed' target='_parent') Breezed HTML Template
-            |  is provided by TemplateMo for absolutely free of charge. You can download, edit and use this for your non-commercial and commercial websites.
-            br
-            br
-            | Redistributing this template as a downloadable ZIP file on any template collection website is strictly prohibited. You will need to talk to us if you want to redistribute this template. Thank you.
-            br
-            br
-            | This is a Bootstrap v4.3.1 CSS layout. Do you like it? You can feel free to
-            a(rel='nofollow noopener' href='https://templatemo.com/contact' target='_parent') talk to us
-            |  if you have anything.
+    .container
+      .page-section
+        .row
+          .col-lg-6.col-md-6.col-xs-12
+            .left-text-content
+              .section-heading
+                h6 Quiénes somos
+                h2.page-section__title Nos basamos en
+                  .team__title-style
+                    span.first-line
+                    span.second-line
+              .row
+                .col-md-6.col-sm-6
+                  .service-item
+                    img(src='../../assets/img/quality.png' alt='')
+                    h4 Calidad
+                .col-md-6.col-sm-6
+                  .service-item
+                    img(src='../../assets/img/shield.png' alt='')
+                    h4 Seguridad
+                .col-md-6.col-sm-6
+                  .service-item
+                    img(src='../../assets/img/value.png' alt='')
+                    h4 Valores
+                .col-md-6.col-sm-6
+                  .service-item
+                    img(src='../../assets/img/logistics-delivery.png' alt='')
+                    h4 Productividad
+          .col-lg-6.col-md-6.col-xs-12
+            .right-text-content
+              p
+                a(rel='nofollow noopener' href='https://templatemo.com/tm-543-breezed' target='_parent')
+                |En CLIMATIZACION OESTE nos dedicamos a la venta, reparación y service de aires acondicionados, domiciliario e industrial, haciendo provision de los repuestos necesarios para la reparacion de su unidad, con la seguridad de ser confiables en el trabajo realizado.
+                br
+                br
+                | Es un empredimiento que lleva 20 años ininterrumpidos de servicio.
+                |Somos un grupo de personas que venimos trabajando hace tiempo en forma separada y decidimos juntarnos para formar hoy la firma.
+                br
+                br
+                h5 Trabajamos con:
+                br
+                br
+                | Calidad, haciendo las cosas bien desde el principio para responder a todas las expectativas y requerimientos de nuestros clientes.
+                br
+                br
+                | Seguridad, respetando las normas y colaborando para que los demas, tambien las respeten, con el fin de evitar accidentes y mantenernos en un lugar de trabajo seguro.
+                br
+                br
+                | Productividad, procurando el mayor aprovechamiento de los recursos que nos toca administrar, equipos, materias primas, insumos y tiempo.
 
-  section.project
-    .page-section
-      .text-center
-        h2.page-section__title Servicios
-        p.page-section__paragraph
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      .row.gutters-50
-        .col-md-4
-          .thumbnail
-            a(href='assets/images/featured-project-pic1.png' target='_blank')
-              img.img-responsive(src='assets/images/featured-project-pic1.png' alt='')
+  section.project.team--bg
+    .container
+      .page-section
+        .text-center
+          h2.page-section__title Nuestros servicios
+            .team__title-style
+              span.first-line
+              span.second-line
+          p.page-section__paragraph
+            | Podemos brindar un abono mensual , de valor a lo largo de un contrato o periodo de tiempo, permitiendo a los clientes un planeamiento financiero cierto.
+            br
+            | NO SOMOS CONCESIONARIO, por lo tanto, los valores a cotizar , son menores.
+        .row
+          .col-md-4
+            .thumbnail
+              img.img-responsive(src='../../assets/img/aire-acondicionado.png' alt='')
               .caption
-                h4.project__title DESIGN
-                p.project__paragraph Lorem ipsum dolor sit amet
-        .col-md-4
-          .thumbnail
-            a(href='assets/images/featured-project-pic2.png' target='_blank')
-              img.img-responsive(src='assets/images/featured-project-pic2.png' alt='')
-              .caption
-                h4.project__title DESIGN
-                p.project__paragraph Lorem ipsum dolor sit amet
-        .col-md-4
-          .thumbnail
-            a(href='assets/images/featured-project-pic3.png' target='_blank')
-              img.img-responsive(src='assets/images/featured-project-pic3.png' alt='')
-              .caption
-                h4.project__title DESIGN
-                p.project__paragraph Lorem ipsum dolor sit amet
-      .row.gutters-50
-        .col-md-4
-          .thumbnail
-            a(href='assets/images/featured-project-pic4.png' target='_blank')
-              img.img-responsive(src='assets/images/featured-project-pic4.png' alt='')
-              .caption
-                h4.project__title DESIGN
-                p.project__paragraph Lorem ipsum dolor sit amet
-        .col-md-4
-          .thumbnail
-            a(href='assets/images/featured-project-pic5.png' target='_blank')
-              img.img-responsive(src='assets/images/featured-project-pic5.png' alt='')
-              .caption
-                h4.project__title DESIGN
-                p.project__paragraph Lorem ipsum dolor sit amet
-        .col-md-4
-          .thumbnail
-            a(href='assets/images/featured-project-pic6.png' target='_blank')
-              img.img-responsive(src='assets/images/featured-project-pic6.png' alt='')
-              .caption
-                h4.project__title DESIGN
-                p.project__paragraph Lorem ipsum dolor sit amet
+                h4.project__title Venta de equipos de aires acondicionados
+                p.project__paragraph en toda su linea, marca y provision de accesorios y repuestos.
+          .col-md-4
+            .thumbnail
+              a(href='../../assets/img/featured-project-pic2.png' target='_blank')
+                img.img-responsive(src='../../assets/img/colocacion-aire.jpg' alt='')
+                .caption
+                  h4.project__title Colocación
+                  p.project__paragraph de equipos individuales, splits, compactos y centrales.
+          .col-md-4
+            .thumbnail
+              a(href='../../assets/img/featured-project-pic3.png' target='_blank')
+                img.img-responsive(src='../../assets/img/sistemas-calefaccion.jpg' alt='')
+                .caption
+                  h4.project__title Sistemas de calefaccion
+                  p.project__paragraph Lorem ipsum dolor sit amet
+        .row
+          .col-md-4
+            .thumbnail
+              a(href='../../assets/img/mantenimiento-mecanico.png' target='_blank')
+                img.img-responsive(src='../../assets/img/mantenimiento-mecanico2.png' alt='')
+                .caption
+                  h4.project__title Mantenimiento mecanico
+                  p.project__paragraph de los equipos en el lugar
+          .col-md-4
+            .thumbnail
+              a(href='../../assets/img/featured-project-pic5.png' target='_blank')
+                img.img-responsive(src='../../assets/img/repuestos-originales2.png' alt='')
+                .caption
+                  h4.project__title Venta y reparacion
+                  p.project__paragraph de placas electronicas, controles remotos de todas las marcas, provision de controles remotos genericos
+          .col-md-4
+            .thumbnail
+              a(href='../../assets/img/featured-project-pic6.png' target='_blank')
+                img.img-responsive(src='../../assets/img/compresor.jpg' alt='')
+                .caption
+                  h4.project__title Provision y colocacion
+                  p.project__paragraph de compresores, venta y reparacion de motores electricos.
   //- section.video.video--bg
   //-   .container
   //-     .page-section
@@ -166,26 +179,23 @@
   //-           .embed-responsive.embed-responsive-16by9
   //-             iframe#video.embed-responsive-item(src='https://www.youtube.com/embed/wKtPBOb80II?autoplay=0' frameborder='0' allowfullscreen='' allowscriptaccess='always')
   // video-popup-end
-  section.team.team--bg
+  section.team
     .container
       .page-section
         .text-center
-          h2.page-section__title Servicios
+          h2.page-section__title Ventajas
           .team__title-style
             span.first-line
             span.second-line
-          p.page-section__subtitle
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
         .row.gutters-80
           .col-md-4
             .thumbnail.team__single
               .bio.text-center
-                img(src='../../assets/img/team1.png' alt='')
-                h2 Kabbo Liate, Bangladesh
-                p UX/UI Designer
+                //- img(src='../../assets/img/team1.png' alt='')
+                h2 Costo
               .caption
                 p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  | El costo del mantenimiento, al ser preventivo o correctivo, es conocido de ante mano, durante un periodo determinado.
                 .social-icons
                   li
                     a(href='#')
@@ -202,12 +212,11 @@
           .col-md-4
             .thumbnail.team__single
               .bio.text-center
-                img(src='../../assets/img/team2.png' alt='')
-                h2 John Doe, US
-                p UX/UI Designer
+                //- img(src='../../assets/img/team2.png' alt='')
+                h2 Mantenimiento
               .caption
                 p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  |  A travez del correcto mantenimiento preventivo, se obtiene una permanente disposicion de los equipos a costos operativos reducidos y con una alta eficiencia en la prestacion.
                 .social-icons
                   li
                     a(href='#')
@@ -224,12 +233,11 @@
           .col-md-4
             .thumbnail.team__single
               .bio.text-center
-                img(src='../../assets/img/team3.png' alt='')
-                h2 Johnny Depp, Singapoor
-                p UX/UI Designer
+                //- img(src='../../assets/img/team3.png' alt='')
+                h2 Cálidad
               .caption
                 p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  |  Se alarga la vida util de os equipos, disminuyendo los costos futuros de las inversiones por renovacion.
                 .social-icons
                   li
                     a(href='#')
@@ -243,110 +251,110 @@
                   li
                     a(href='#')
                       i.flaticon-pinterest-logo
-  section.testimonial
-    .container
-      .page-section
-        .text-center
-          h2.page-section__title Trabajos realizados
-          .testimonial__title-style
-            span.first-line
-            span.second-line
-          p.page-section__subtitle
-            | Lorem ipsum dolor sit amet, consectetur
-            a(href='#') 450
-            |  adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-        .row
-          .col-md-8
-            .accordion-group
-              #one.collapse.in.indent
-                .collapse__wrapper
-                  .bio.bio-1
-                    h2 Tyrion Lannister
-                    p Company Name
-                  .star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                  p.paragraph
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              #two.collapse
-                .collapse__wrapper
-                  .bio.bio-2
-                    h2 Sansa Stark
-                    p Company Name
-                  .star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                  p.paragraph
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              #three.collapse
-                .collapse__wrapper
-                  .bio.bio-3
-                    h2 Khal Drogo
-                    p Company Name
-                  .star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                  p.paragraph
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              #four.collapse
-                .collapse__wrapper
-                  .bio.bio-4
-                    h2 Jon Snow
-                    p Company Name
-                  .star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                    li
-                      i.material-icons star
-                  p.paragraph
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          .col-md-4.testimonial-right.open-default
-            button.button-testimonial.button-testimonial-1(data-toggle='collapse' data-target='#one')
-              .bio
-                h2 Tyrion Lannister
-                p Company Name
-            button.button-testimonial.button-testimonial-2(data-toggle='collapse' data-target='#two')
-              .bio
-                h2 Sansa Stark
-                p Company Name
-            button.button-testimonial.button-testimonial-3(data-toggle='collapse' data-target='#three')
-              .bio
-                h2 Khal Drogo
-                p Company Name
-            button.button-testimonial.button-testimonial-4(data-toggle='collapse' data-target='#four')
-              .bio
-                h2 Jon Snow
-                p Company Name
+  //- section.testimonial
+  //-   .container
+  //-     .page-section
+  //-       .text-center
+  //-         h2.page-section__title Trabajos realizados
+  //-         .testimonial__title-style
+  //-           span.first-line
+  //-           span.second-line
+  //-         p.page-section__subtitle
+  //-           | Lorem ipsum dolor sit amet, consectetur
+  //-           a(href='#') 450
+  //-           |  adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+  //-       .row
+  //-         .col-md-8
+  //-           .accordion-group
+  //-             #one.collapse.in.indent
+  //-               .collapse__wrapper
+  //-                 .bio.bio-1
+  //-                   h2 Tyrion Lannister
+  //-                   p Company Name
+  //-                 .star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                 p.paragraph
+  //-                   | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+  //-             #two.collapse
+  //-               .collapse__wrapper
+  //-                 .bio.bio-2
+  //-                   h2 Sansa Stark
+  //-                   p Company Name
+  //-                 .star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                 p.paragraph
+  //-                   | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+  //-             #three.collapse
+  //-               .collapse__wrapper
+  //-                 .bio.bio-3
+  //-                   h2 Khal Drogo
+  //-                   p Company Name
+  //-                 .star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                 p.paragraph
+  //-                   | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+  //-             #four.collapse
+  //-               .collapse__wrapper
+  //-                 .bio.bio-4
+  //-                   h2 Jon Snow
+  //-                   p Company Name
+  //-                 .star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                   li
+  //-                     i.material-icons star
+  //-                 p.paragraph
+  //-                   | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+  //-         .col-md-4.testimonial-right.open-default
+  //-           button.button-testimonial.button-testimonial-1(data-toggle='collapse' data-target='#one')
+  //-             .bio
+  //-               h2 Tyrion Lannister
+  //-               p Company Name
+  //-           button.button-testimonial.button-testimonial-2(data-toggle='collapse' data-target='#two')
+  //-             .bio
+  //-               h2 Sansa Stark
+  //-               p Company Name
+  //-           button.button-testimonial.button-testimonial-3(data-toggle='collapse' data-target='#three')
+  //-             .bio
+  //-               h2 Khal Drogo
+  //-               p Company Name
+  //-           button.button-testimonial.button-testimonial-4(data-toggle='collapse' data-target='#four')
+  //-             .bio
+  //-               h2 Jon Snow
+  //-               p Company Name
   section.form.form--bg
     .container
       .page-section
@@ -357,19 +365,7 @@
             span.second-line
           p.page-section__subtitle.page-section__subtitle--white
             | Para pedir un presupuesto o antes cualquier consulta no dude en contactarme
-        form(action='#')
-          .form-group
-            input.form-control(type='text' placeholder='Name')
-          .form-group
-            input.form-control(type='email' placeholder='Email')
-          .form-group
-            textarea.form-control(rows='5' placeholder='Message')
-          .row
-            .col-md-6.checkbox
-              input#checkbox-1(type='checkbox')
-              label(for='checkbox-1')  Subscribe to newslatter
-            .col-md-6.form-button
-              input.button--form(type='submit' value='SEND')
+
   footer.footer.footer--bg
     .container
       .row

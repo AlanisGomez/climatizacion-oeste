@@ -18,7 +18,7 @@ export default {
           },
           autoplay: {
             delay: 2500,
-            disableOnInteraction: false
+            disableOnInteraction: true
           },
           loop: true
         }
