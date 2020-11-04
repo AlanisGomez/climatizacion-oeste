@@ -24,6 +24,7 @@
           //-   span.title-style
           //- p.pl-3
           //-   | VENTA, REPARACION Y SERVICE DE AIRES ACONDICIONADOS, DOMICILIARIO E INDUSTRIAL
+          a.ml-3.header__button(href='#') VER MÁS
           a.ml-3.header__button(href='#') CONTACTARSE
   section.sponsors.sponsors--bg
     .container
@@ -111,47 +112,49 @@
             | NO SOMOS CONCESIONARIO, por lo tanto, los valores a cotizar , son menores.
         .row
           .col-md-4
-            .thumbnail
-              img.img-responsive(src='../../assets/img/aire-acondicionado.png' alt='')
-              .caption
+            .card.thumbnail
+              .img-container
+                img.card-img-top(src='../../assets/img/aire-acondicionado.png' alt='')
+              .card-body
                 h4.project__title Venta de equipos de aires acondicionados
-                p.project__paragraph en toda su linea, marca y provision de accesorios y repuestos.
+                p.card-text
+                  |en toda su linea, marca y provision de accesorios y repuestos.
           .col-md-4
-            .thumbnail
-              a(href='../../assets/img/featured-project-pic2.png' target='_blank')
-                img.img-responsive(src='../../assets/img/colocacion-aire.jpg' alt='')
-                .caption
-                  h4.project__title Colocación
-                  p.project__paragraph de equipos individuales, splits, compactos y centrales.
+            .card.thumbnail
+              .img-container
+                img.card-img-top(src='../../assets/img/colocacion-aire.jpg' alt='')
+              .card-body
+                h4.project__title Colocación
+                p.card-text de equipos individuales, splits, compactos y centrales.
           .col-md-4
-            .thumbnail
-              a(href='../../assets/img/featured-project-pic3.png' target='_blank')
-                img.img-responsive(src='../../assets/img/sistemas-calefaccion.jpg' alt='')
-                .caption
-                  h4.project__title Sistemas de calefaccion
-                  p.project__paragraph Lorem ipsum dolor sit amet
+            .card.thumbnail
+              .img-container
+                img.card-img-top(src='../../assets/img/sistemas-calefaccion.jpg' alt='')
+              .card-body
+                h4.project__title Sistemas de calefacción
+                p.card-text Lorem ipsum dolor sit amet
         .row
           .col-md-4
-            .thumbnail
-              a(href='../../assets/img/mantenimiento-mecanico.png' target='_blank')
-                img.img-responsive(src='../../assets/img/mantenimiento-mecanico2.png' alt='')
-                .caption
-                  h4.project__title Mantenimiento mecanico
-                  p.project__paragraph de los equipos en el lugar
+            .card.thumbnail
+              .img-container
+                img.card-img-top(src='../../assets/img/mantenimiento-mecanico2.png' alt='')
+              .card-body
+                h4.project__title Mantenimiento mecánico
+                p.card-text de los equipos en el lugar
           .col-md-4
-            .thumbnail
-              a(href='../../assets/img/featured-project-pic5.png' target='_blank')
-                img.img-responsive(src='../../assets/img/repuestos-originales2.png' alt='')
-                .caption
+            .card.thumbnail
+                .img-container
+                  img.card-img-top(src='../../assets/img/repuestos-originales2.png' alt='')
+                .card-body
                   h4.project__title Venta y reparacion
-                  p.project__paragraph de placas electronicas, controles remotos de todas las marcas, provision de controles remotos genericos
+                  p.card-text de placas electronicas y controles remotos de todas las marcas.
           .col-md-4
-            .thumbnail
-              a(href='../../assets/img/featured-project-pic6.png' target='_blank')
-                img.img-responsive(src='../../assets/img/compresor.jpg' alt='')
-                .caption
+            .card.thumbnail
+                .img-container
+                  img.card-img-top(src='../../assets/img/compresor.jpg' alt='')
+                .card-body
                   h4.project__title Provision y colocacion
-                  p.project__paragraph de compresores, venta y reparacion de motores electricos.
+                  p.card-text de compresores, venta y reparacion de motores electricos.
   //- section.video.video--bg
   //-   .container
   //-     .page-section
