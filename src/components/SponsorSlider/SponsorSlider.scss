@@ -1,0 +1,21 @@
+@import '../../assets/css/abstracts/variables';
+@import "../../assets/css/abstracts/variables-bootstrap";
+@import "../../assets/css/abstracts/mixins";
+
+.sponsors__single{
+  width: 7rem;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include laptop-sm {
+      width: 10rem;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

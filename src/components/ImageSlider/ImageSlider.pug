@@ -1,0 +1,9 @@
+swiper(:options="swiperOption")
+  swiper-slide
+    img.d-none.d-md-block(src='../../assets/img/banner-inicio.svg' alt='')
+    img.d-block.d-md-none(src='../../assets/img/banner-mobile.svg' alt='')
+  swiper-slide.d-none.d-md-block
+      img(src='../../assets/img/banner-inicio-2.svg' alt='')
+  .swiper-button-prev.d-none.d-md-block(slot="button-prev")
+  .swiper-button-next.d-none.d-md-block(slot="button-next")
+  .swiper-pagination.d-none.d-md-block(slot="pagination")
