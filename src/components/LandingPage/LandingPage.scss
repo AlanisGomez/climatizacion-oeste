@@ -670,3 +670,20 @@ p{
 .container {
   max-width: 1220px;
 }
+
+#contactForm {
+  color: $white
+}
+
+.form-button {
+  button {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $white;
+
+    &:hover {
+      color: $primary;
+      background-color: $white;
+    }
+  }
+}

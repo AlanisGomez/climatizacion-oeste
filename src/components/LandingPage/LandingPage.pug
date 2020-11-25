@@ -54,7 +54,7 @@
             .right-text-content
               p
                 a(rel='nofollow noopener' href='https://templatemo.com/tm-543-breezed' target='_parent')
-                |En CLIMATIZACION OESTE nos dedicamos a la venta, reparación y service de aires acondicionados, domiciliario e industrial, haciendo provision de los repuestos necesarios para la reparacion de su unidad, con la seguridad de ser confiables en el trabajo realizado.
+                |En CLIMATIZACION OESTE nos dedicamos a la venta, reparación y service de aires acondicionados, domiciliario e industrial, haciendo provisión de los repuestos necesarios para la reparación de su unidad, con la seguridad de ser confiables en el trabajo realizado.
                 br
                 br
                 | Es un empredimiento que lleva 20 años ininterrumpidos de servicio.
@@ -67,7 +67,7 @@
                 | Calidad haciendo las cosas bien desde el principio para responder a todas las expectativas y requerimientos de nuestros clientes.
                 br
                 br
-                | Seguridad, respetando las normas y colaborando para que los demas, tambien las respeten, con el fin de evitar accidentes y mantenernos en un lugar de trabajo seguro.
+                | Seguridad, respetando las normas y colaborando para que los demas tambien las respeten con el fin de evitar accidentes y mantenernos en un lugar de trabajo seguro.
                 br
                 br
                 | Productividad, procurando el mayor aprovechamiento de los recursos que nos toca administrar, equipos, materias primas, insumos y tiempo.
@@ -118,7 +118,7 @@
           .col-md-4
             .card.thumbnail
                 .img-container
-                  img.card-img-top(src='../../assets/img/controles.jpg' alt='')
+                  img.card-img-top(src='../../assets/img/control-aire-acondicionado.jpg' alt='')
                 .card-body
                   h4.project__title Venta y reparación
                   p.card-text de placas electronicas y controles remotos de todas las marcas.
@@ -197,21 +197,23 @@
                     a(href='#')
                       img(src='../../assets/img/whatsapp-icon.png' alt='')
                   li
-                    a(href='#')
+                    a(href="mailto:contacto@climatizacionoeste.com")
                       img(src='../../assets/img/gmail-icon.png' alt='')
           .col-md-6.d-flex.align-items-center
-            form.w-100(@submit.prevent="registerUser")
+            form#contactForm.w-100(@submit.prevent="sendEmail")
               .form-group
-                input.form-control(type='text' placeholder='Nombre' v-model="user.name")
+                input.form-control(type='text' placeholder='Nombre*' v-model="user.name" name="name" required)
               .form-group
-                input.form-control(type='email' placeholder='Email' v-model="user.email" )
+                input.form-control(type='email' placeholder='Email*' v-model="user.email" name="email" required)
               .form-group
-                input.form-control(type='text' placeholder='Teléfono' v-model="user.phone")
+                input.form-control(type='text' placeholder='Teléfono' v-model="user.phone" name="phone")
               .form-group
-                textarea.form-control(rows='5' placeholder='Escriba su consulta' v-model="user.msg")
+                textarea.form-control(rows='5' placeholder='Escriba su consulta*' v-model="user.msg" name="msg" required)
+              .form-group
+                small Campos obligatorios (*)
               .row
-                .col-md-12.form-button
-                    button.btn.btn-primary(type="submit")
+                .col-md-12.form-button.d-flex.justify-content-end
+                    button.btn.btn-lg(type="submit")
                       span.spinner-border.spinner-border-sm(v-if="loader" role="status" aria-hidden="true")
                       |Enviar
 
