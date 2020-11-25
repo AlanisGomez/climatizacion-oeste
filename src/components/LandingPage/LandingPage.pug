@@ -118,17 +118,17 @@
           .col-md-4
             .card.thumbnail
                 .img-container
-                  img.card-img-top(src='../../assets/img/repuestos-originales2.png' alt='')
+                  img.card-img-top(src='../../assets/img/controles.jpg' alt='')
                 .card-body
-                  h4.project__title Venta y reparacion
+                  h4.project__title Venta y reparación
                   p.card-text de placas electronicas y controles remotos de todas las marcas.
           .col-md-4
             .card.thumbnail
                 .img-container
-                  img.card-img-top(src='../../assets/img/compresor.jpg' alt='')
+                  img.card-img-top(src='../../assets/img/prevision.jpeg' alt='')
                 .card-body
-                  h4.project__title Provision y colocacion
-                  p.card-text de compresores y de motores electricos.
+                  h4.project__title Provision y colocación
+                  p.card-text de compresores y de motores eléctricos.
   section.team
     .container
       .page-section
@@ -156,7 +156,7 @@
                 h2 Mantenimiento
               .caption
                 p
-                  |  A travez del correcto mantenimiento preventivo, se obtiene una permanente disposicion de los equipos a costos operativos reducidos y con una alta eficiencia en la prestación.
+                  |  A través del correcto mantenimiento preventivo, se obtiene una permanente disposicion de los equipos a costos operativos reducidos y con una alta eficiencia en la prestación.
           .col-md-4
             .thumbnail.team__single
               .bio.text-center
@@ -200,27 +200,20 @@
                     a(href='#')
                       img(src='../../assets/img/gmail-icon.png' alt='')
           .col-md-6.d-flex.align-items-center
-            <form action="#">
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Nombre">
-              </div>
-              <div class="form-group">
-                <input class="form-control" type="email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="5" placeholder="Consulta"></textarea>
-              </div>
-              <div class="row">
-                <div class="col-md-6 checkbox">
-                  <input type="checkbox" id="checkbox-1">
-                  <label for="checkbox-1"> Subscribe to newslatter</label>
-                </div>
-                <div class="col-md-6 form-button">
-                  <input class="button--form" type="submit" value="Enviar">
-                </div>
-              </div>
-            </form>
-
+            form.w-100(@submit.prevent="registerUser")
+              .form-group
+                input.form-control(type='text' placeholder='Nombre' v-model="user.name")
+              .form-group
+                input.form-control(type='email' placeholder='Email' v-model="user.email" )
+              .form-group
+                input.form-control(type='text' placeholder='Teléfono' v-model="user.phone")
+              .form-group
+                textarea.form-control(rows='5' placeholder='Escriba su consulta' v-model="user.msg")
+              .row
+                .col-md-12.form-button
+                    button.btn.btn-primary(type="submit")
+                      span.spinner-border.spinner-border-sm(v-if="loader" role="status" aria-hidden="true")
+                      |Enviar
 
   footer.footer.footer--bg
     .container
