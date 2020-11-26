@@ -127,7 +127,7 @@
                 .img-container
                   img.card-img-top(src='../../assets/img/prevision.jpeg' alt='')
                 .card-body
-                  h4.project__title Provision y colocación
+                  h4.project__title Provisión y colocación
                   p.card-text de compresores y de motores eléctricos.
   section.team
     .container
@@ -189,16 +189,16 @@
               | Para pedir un presupuesto o ante cualquier consulta
               br
               |no dude en escribirnos a través de nuestras redes.
-            .social-icons.d-flex.w-75.mt-4
-                  li
-                    a(href='#')
-                      img(src='../../assets/img/facebook-icon.png' alt='')
-                  li
-                    a(href='https://api.whatsapp.com/send?phone=5491156478170' target="_blank")
-                      img(src='../../assets/img/whatsapp-icon.png' alt='')
-                  li
-                    a(href="mailto:contacto@climatizacionoeste.com")
-                      img(src='../../assets/img/gmail-icon.png' alt='')
+            ul.social-icons.d-flex.w-75
+              li
+                a(href='#')
+                  img(src='../../assets/img/facebook-icon.png' alt='Facebook' title="Facebook")
+              li
+                a(href='https://api.whatsapp.com/send?phone=5491156478170' target="_blank")
+                  img(src='../../assets/img/whatsapp-icon.png' alt='WhatsApp' title="Escribir un WhatsApp")
+              li
+                a(href="mailto:contacto@climatizacionoeste.com")
+                  img(src='../../assets/img/gmail-icon.png' alt='Correo' title="Enviar un correo")
           .col-md-6.d-flex.align-items-center
             form#contactForm.w-100(@submit.prevent="sendEmail")
               .form-group

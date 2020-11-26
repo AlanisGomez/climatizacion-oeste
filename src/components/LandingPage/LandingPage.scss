@@ -1,7 +1,8 @@
 @import '../../assets/css/abstracts/variables';
 @import "../../assets/css/abstracts/variables-bootstrap";
 @import "../../assets/css/abstracts/mixins";
-
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
 /********** common setting **********/
 @font-face {
   font-family: 'Geometria';
@@ -29,16 +30,6 @@ ul{
 a:hover, a:focus{
   text-decoration: none;
   outline: 0;
-}
-
-html,body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  font-family: 'Geometria';
-  line-height: 1.8;
 }
 
 h1,h2{
@@ -225,7 +216,7 @@ p{
     }
 
 .page-section__subtitle{
-    font-size: 16px;
+    font-size: $font-size-base;
     color: #08294c;
   }
 
@@ -285,30 +276,8 @@ p{
         background-color: #1680F8;
       }
 
-.steps__single{
-    margin-bottom: 80px;
-  }
-
-.steps__single img{
-      margin-bottom: 30px;
-    }
-
-.steps__single p{
-      max-width: 170px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-.steps__single-first{
-      float: left;
-    }
-
-.steps__single-last{
-      float: right;
-    }
 
 .button{
-
   display: inline-block;
   padding: 12px 55px;
   font-family: "Geometria-Medium";
@@ -339,10 +308,10 @@ p{
 }
 
 .sponsors--bg{
-    background-color: #FAFAFA;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
+  background-color: #FAFAFA;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 .team--bg{
     background-color: #FCFCFC;
@@ -425,14 +394,21 @@ p{
       }
 
 .team__single .caption p{
-        font-size: 16px;
-        color: #08294c;
-        line-height: 1.8;
-        margin-bottom: 25px;
-      }
+  font-size: $font-size-sm;
+  color: #08294c;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
 
-.social-icons img{
-  max-width: 40%;
+.social-icons {
+  margin-top: 2rem;
+  img{
+    max-width: 60%;
+
+    @include laptop-sm {
+      max-width: 40%;
+    }
+  }
 }
 
 .team__single .caption .social-icons li a{
@@ -458,29 +434,29 @@ p{
   }
 
 .form__title-style{
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
+}
 
 .form__title-style .first-line{
-      display: inline-block;
-      border-top: 3px solid #fff;
-      border-bottom: 3px solid #fff;
-      padding: 0px 58px;
-      border-radius: 5px;
-      position: relative;
-    }
+  display: inline-block;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  padding: 0px 58px;
+  border-radius: 5px;
+  position: relative;
+}
 
 .form__title-style .first-line:after{
-        content: "";
-        width: 7px;
-        height: 7px;
-        display: inline-block;
-        border-radius: 50%;
-        position: absolute;
-        right: -17px;
-        top:-4px;
-        background-color: #fff;
-      }
+  content: "";
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  right: -17px;
+  top:-4px;
+  background-color: #fff;
+}
 
 .form__title-style .second-line{
       display: inline-block;
@@ -622,8 +598,8 @@ p{
       }
 
 .footer__social-icons li a{
-        display: block;
-      }
+    display: block;
+  }
 
   .project .thumbnail {
     border: 0;
@@ -648,6 +624,7 @@ p{
 
 .card-body {
   height: 8rem;
+  font-size: $font-size-sm;
 }
 
 .project .thumbnail .caption {
@@ -672,7 +649,11 @@ p{
 }
 
 #contactForm {
-  color: $white
+  color: $white;
+  margin-top: 2rem;
+  @include laptop-sm {
+    margin-top: 0;
+  }
 }
 
 .form-button {
