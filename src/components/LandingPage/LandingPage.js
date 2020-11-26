@@ -26,9 +26,8 @@ export default {
     sendEmail() {
       this.loader = true
       http
-        .post('http://localhost:5000/send-email', this.user)
+        .post('https://climatizacionoeste.com/api-v1/send-email', this.user)
         .then(res => {
-          console.log(res)
           alert("Consulta enviada exitosamente")
           this.user.name = ''
           this.user.email = ''
